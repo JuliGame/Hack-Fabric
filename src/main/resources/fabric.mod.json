@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "hack",
+  "version": "${version}",
+  "name": "Hack",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/julian/Hack"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/hack/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.sevendev.hack.client.HackClient"
+    ],
+    "main": [
+      "net.sevendev.hack.Hack"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  },
+  "mixins": [
+    "mixins.json"
+  ]
+}
